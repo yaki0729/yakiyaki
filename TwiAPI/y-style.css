@@ -1,0 +1,370 @@
+/*SMACSS*/
+/* ①   Base – ベースルール：初期設定*/
+.search-textarea{
+  border-radius: 3px;  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.6) inset;
+  font-size: 10px;
+  line-height: 11px;
+  width: 45%;
+  padding: 0; margin: 1px;
+}
+    .search-form{
+      font-size: 0.9em;
+      margin: 5px 1px 3px 3px;
+      padding: 5px;
+      width:110px; min-height: 5%;
+      background-color: #BBB;
+      display: flex;
+      flex-direction: column;
+      float: left;
+    }
+    .multi_culumn{
+      justify-content: space-around;
+      margin: 1 0px;
+    }
+    .jogai{
+      float:left; width: 105px;
+      background-color: #888; margin: 2px; padding: 3px
+    }
+  .usersearch-form{
+    margin: 5 0px;
+    padding: 5px;
+    width:230px; height: 30%;
+    background-color: #BBB;
+  }
+  #buttons_field{
+    height: 145px; width: 950px;
+    border: dashed 2px #777;
+    overflow: visible;
+    position: absolute; top: 5px; left: 255px;
+  }
+  .control_box .control_box_parts{
+    display: block;
+    background-color: #8aa;
+    padding: 2px; margin: 2px;
+  }
+  #db_count{
+    width: 50%; padding: 0px; margin: 0px;
+    float: right;
+  }
+  #buttons_field h3, h2, h5{
+    line-height: 14px;
+    font-size: 12px;
+    color: #005;
+    text-align: center;
+    margin: 0;
+  }
+  .control_box_parts textarea{
+    float: right;
+  }
+  .control_box_parts:after{
+    clear: both;
+  }
+  form{
+    background-color: #ddd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  *, p{
+    margin:0;
+    padding:0;
+    border-radius: 4px;
+  }
+  button{
+    border-radius: 5%;  box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4) ;
+    margin: 1 1px; font-size: 0.7em; line-height: 0.98em;
+    max-width: 45%;
+  }
+  textarea{
+    font-size: 0.75em;
+  }
+  dl{
+    width:400px;
+    margin:50px auto;
+  }
+  dl dt{
+    background:#7CADB6;
+    border-bottom:1px solid #FFFFFF;
+    cursor:pointer;
+  }
+  dl dd{
+    border:1px solid #7CADB6;
+    border-top:none;
+    height:300px;
+  }
+  td, tr, th{
+    border: solid 1px #EEE;
+    background-color: #FFF;
+  }
+/* ②   Layout – レイアウトルール：基本レイアウト*/
+/* ③   Module – モジュールルール：パーツ全般*/
+  .m-tweetbox{
+    width: 195px;      max-height: 160px;
+    border-radius: 5px;
+    border: double 4px #000;
+    margin: 2 5px;
+    line-height: 1em;
+    background-color: #EEE;
+    background-size: auto 170%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+    }
+    .mp-tweetbox-tweet{
+      width:auto; height: 95px;
+      margin: 5px 5px;
+      background: rgba(255,255,255,0.65);
+      font-size: 0.6em;
+      line-height: 1.05em;
+      float: left;
+    }
+    .mp-tweetbox-thumb{
+      width: 50px; height: 50px;
+      background-color: black; padding: 2 0 0 2px;
+      margin: 1px;
+    }
+    .mp-tweetbox-meta{
+      height: 50px; width: 135px; float: left;
+      background: rgba(255,255,255,0.5);
+      position: absolute; top: 0px; left: 55px;
+      margin: 1px;
+      overflow: hidden;
+      font-size: 0.75em;
+    }
+      .mp-tweetbox-meta li{
+        list-style-type: none;
+        display: inline-block; height: 1em;width: 220px; margin: 0 0 0 5px;
+        overflow: hidden;
+      }
+  .m-usertlbox{
+    width: 195px;      height: 105px;      float: left;
+    background-color: #777;
+    position: relative;
+    border: double 4px #000;
+    border-radius: 5px;
+    margin: 2 3px;
+    background-size: cover;
+    background-position: center center;
+    }
+      .mp-usertlbox-meta{
+        height: 15px; width: 185px; float: left; background-color: white;
+        background: rgba(255,255,255,0.3);
+        position: absolute; top: 0px; left: 0px;
+        margin: 1px;
+        overflow: hidden;
+        font-size: 0.5em;
+      }
+      .mp-usertlbox-meta li{
+        list-style-type: none;
+        display: inline-block; height: 1em;width: 220px; margin: 0 0 0 5px;
+        overflow: hidden;
+      }
+      .mp-usertlbox-tweet{
+        width:185px; height: 85px;
+        margin: 5px 5px;
+        background: rgba(255,255,255,0.5);
+        font-size: 0.6em;
+        position: absolute; top: 12px; left: 0px;
+      }
+  .m-tubox{
+    width: 180px; height: 200px;
+    background-color: #ebc;
+    color: #555;
+    float: left;
+    margin: 5px;
+    width: 180px; height: 200px;
+    background-color: #DDD;
+    background-size: cover;
+    background-position: center top;
+    }
+    .m-tubox-main{
+      background: rgba(255,255,255,0.6);
+      height: 200px;
+    }
+    .m-tubox-thumb{
+      width: 47px; height: 47px; margin: 0;
+      background-color: #EEE;
+      background-size: cover;
+      background-position: center top;
+      float: left;
+    }
+    .m-tubox-info{
+      width: 133px; height: 47px; margin: 0;
+      float: right;
+      background: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+    .m-tubox-info h3{
+      color:#FFF;
+      font-size: 0.9em;
+      text-align: left; line-height: 16px;
+    }
+    .m-tubox-prof_desc{
+      float: left;
+      padding: 5px;
+      height: 130px;
+      width: 170px;
+      overflow: hidden;
+    }
+    .m-tubox-prof_desc p{
+      word-wrap: break-word;
+      font-size: 0.75em;
+    }
+    .m-tubox-info .userdata_to_tuilist{
+      min-width: 50px; height: 24px; border: double 2px;
+      font-size: 11px; line-height: 10px;
+      font-style: italic;
+      text-align: center;
+    }
+/* ④   State – 状態（ステート）ルール：JS等*/
+/* ⑤   Theme – テーマルール：スタイル一括変更(装飾？)*/
+#pageall{/*ページ全体*/
+  width:1230px;
+  min-width: 900px;
+  min-height: 600px;
+  height: 70%;
+  background-color: #88C;
+  position: absolute; left: -20px; top: 0px;
+}
+#header{
+  padding: 5 5px; margin: 0;
+  width:100%; height: 160px; background-color: #EEE;
+  position: absolute; top: 0px; left: 0px;
+}
+#header::-webkit-scrollbar {
+  display: none;
+}
+#content{
+  padding: 5 5px; margin: 0;
+  width:100%; height: 490px; background-color: #EEE;
+  position: absolute; top: 155px; left: 0px;
+  clear: both;
+  }
+#content::-webkit-scrollbar {
+  display: none;
+}
+#left_column{
+  padding: 5 5px;
+  width:282px;
+  height: 95%;
+  background-color: #DDF;
+  position: absolute; top: 5px; left: 2px;
+  line-height: 1em;
+  }
+#container{
+  background-color: #DDD;
+  margin: 5px; padding: 5px;
+  width:645px; height: 95%;
+  overflow-y: scroll; overflow-x: hidden;
+  float: left;
+}
+#container::-webkit-scrollbar {
+  display: none;
+}
+.right_column{
+  padding: 5px; margin: 5px;
+  width: 262px; height: 95%; overflow-y: scroll;  overflow-x: hidden;
+  background-color: #CCC;
+  float: left;
+}
+.right_column::-webkit-scrollbar {
+  display: none;
+}
+/*仮置き場~~~~~~~~~~~~~~~~~~~~~~~~*/
+li.kiji{
+  background-color: #bbb;
+  font: #000;
+  margin: 5px;
+  border-width: 3px;
+  border-style: double;
+  padding: 3px;
+}
+/*End仮置き場~~~~~~~~~~~~~~~~~~~~~~~~*/
+ul.acc_inside {
+  display: none;
+}
+.accordion {
+  cursor: pointer;
+}
+
+
+/*TuiUserBox(ユーザ検索)ー＞tubox*/
+  /*終：TuiUserBox(ユーザ検索)*/
+/*ソース生成*/
+    textarea#souce_text{
+      width: 100%;
+      height: 80%;
+    }
+
+/*全体*/
+    /*終：全体*/
+/*TuiList =>Tweet表示*/
+.control_box {
+  text-align: center;
+  font-size: 1em;
+  width: 130px; height: 140px;
+  font-weight: bold;
+  background-color: #aae;
+  margin: 2px;
+  float: left;
+}
+.control_box h3{
+  text-align: left;
+  font-size: 1.3em;
+}
+#search_result{
+  background-color: #aaa;
+}
+#response{
+  border: dashed 2px #000000;
+  width: 96%; min-height: 70px;
+  padding: 4 2px;
+  text-align: center;
+  font-size: 0.7em;
+}
+.return_log{
+  width:95%;  min-height: 40px; border: inset 6px #ddF;
+  max-height: 90px; overflow-y: scroll;
+  text-align: left;
+}
+#pics{
+     max-height: 80px; margin: 0px;
+}
+.picthumb{
+    max-width: 70px; max-height: 70px; margin: 3px;
+}
+
+
+.tui-list{
+  word-wrap: normal;
+  height: 16px;
+  width: 210px;
+  text-overflow: ellipsis;
+}
+.keyword{
+  font-weight: bold;
+  color: #AAF;
+}
+table.id-name-list {
+  width: 280px;
+  font-size: 65%;
+  text-align: left;
+  background-color: #333;
+}
+table.ranking-list {
+  width: 630px;
+  font-size: 100%;
+  text-align: left;
+  background-color: #333;
+}
+
+#wp_post-form #post_title{
+  width: 98%;
+}
+#wp_post-form #post_text{
+  width: 98%;
+}
